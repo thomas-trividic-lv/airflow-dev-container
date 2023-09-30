@@ -1,0 +1,14 @@
+services:
+  airflow:
+    stdin_open: true  # docker run -i
+    tty: true  # docker run -t
+    image: apache/airflow:2.5.3-python3.9
+    env_file: devcontainer.env
+    ports:
+      # - "22:22"
+      - "8080:8080"
+      # - "5555:5555"
+      # - "6379:6379"
+    volumes:
+      # this will keep /workspaces/airflow and /opt/airflow in sync.
+      - ../airflow:/opt/airflow
