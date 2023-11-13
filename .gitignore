@@ -51,4 +51,6 @@ Temporary Items
 .ionide
 
 # Airflow
-airflow/logs
+logs/*
+airflow.db
+airflow-webserver.pid

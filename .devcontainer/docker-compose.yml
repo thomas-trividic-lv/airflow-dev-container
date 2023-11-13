@@ -11,4 +11,4 @@ services:
       # - "6379:6379"
     volumes:
       # this will keep /workspaces/airflow and /opt/airflow in sync.
-      - ../airflow:/opt/airflow
+      - ../:/opt/airflow
