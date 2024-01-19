@@ -12,3 +12,4 @@ services:
     volumes:
       # this will keep /workspaces/airflow and /opt/airflow in sync.
       - ../:/opt/airflow
+      - ${HOME}/.config/gcloud/application_default_credentials.json:/home/airflow/.config/gcloud/application_default_credentials.json
