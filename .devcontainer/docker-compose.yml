@@ -2,7 +2,7 @@ services:
   airflow:
     stdin_open: true  # docker run -i
     tty: true  # docker run -t
-    image: apache/airflow:2.5.3-python3.9
+    image: apache/airflow:2.9.3-python3.12
     env_file: devcontainer.env
     ports:
       # - "22:22"
